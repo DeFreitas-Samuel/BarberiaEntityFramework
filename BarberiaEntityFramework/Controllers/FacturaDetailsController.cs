@@ -10,6 +10,7 @@ using BarberiaEntityFramework.Models;
 
 namespace BarberiaEntityFramework.Controllers
 {
+    //Samuel De Freitas
     [Route("api/[controller]")]
     [ApiController]
     public class FacturaDetailsController : ControllerBase

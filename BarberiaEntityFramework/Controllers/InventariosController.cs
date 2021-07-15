@@ -14,6 +14,7 @@ namespace BarberiaEntityFramework.Controllers
     [ApiController]
     public class InventariosController : ControllerBase
     {
+        //Samuel De Freitas
         private readonly BarberiaEntityFrameworkContext _context;
 
         public InventariosController(BarberiaEntityFrameworkContext context)

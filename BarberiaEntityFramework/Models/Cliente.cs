@@ -9,7 +9,7 @@ namespace BarberiaEntityFramework.Models
 {
     public class Cliente
     {
-
+        //Samuel De Freitas
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }

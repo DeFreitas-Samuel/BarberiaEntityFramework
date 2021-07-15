@@ -9,6 +9,7 @@ namespace BarberiaEntityFramework.Models
 {
     public class Factura
     {
+        //Samuel De Freitas
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }

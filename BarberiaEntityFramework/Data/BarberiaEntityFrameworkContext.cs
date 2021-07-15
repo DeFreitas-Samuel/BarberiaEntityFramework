@@ -9,6 +9,7 @@ namespace BarberiaEntityFramework.Data
 {
     public class BarberiaEntityFrameworkContext : DbContext
     {
+        //Samuel De Freitas
         public BarberiaEntityFrameworkContext (DbContextOptions<BarberiaEntityFrameworkContext> options)
             : base(options)
         {
