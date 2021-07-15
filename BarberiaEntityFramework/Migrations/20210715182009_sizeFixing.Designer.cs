@@ -4,14 +4,16 @@ using BarberiaEntityFramework.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BarberiaEntityFramework.Migrations
 {
     [DbContext(typeof(BarberiaEntityFrameworkContext))]
-    partial class BarberiaEntityFrameworkContextModelSnapshot : ModelSnapshot
+    [Migration("20210715182009_sizeFixing")]
+    partial class sizeFixing
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,7 +77,7 @@ namespace BarberiaEntityFramework.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<DateTime?>("FechaFin")
+                    b.Property<DateTime>("FechaFin")
                         .HasColumnType("datetime");
 
                     b.Property<DateTime>("FechaInicio")
@@ -90,9 +92,6 @@ namespace BarberiaEntityFramework.Migrations
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
-
-                    b.Property<decimal>("Salario")
-                        .HasColumnType("decimal(7,2)");
 
                     b.Property<int?>("TipoEmpleadoID")
                         .HasColumnType("int");

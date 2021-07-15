@@ -19,7 +19,7 @@ namespace BarberiaEntityFramework.Models
 
         [Required]
         [MaxLength(15)]
-        public int Apellido { get; set; }
+        public string Apellido { get; set; }
 
         [Required]
         [MaxLength(20)]
@@ -30,8 +30,14 @@ namespace BarberiaEntityFramework.Models
         public DateTime FechaInicio { get; set; }
 
         [Column(TypeName = "datetime")]
-        public DateTime FechaFin { get; set; }
+        public DateTime? FechaFin { get; set; }
+
+        [Required]
+        [Column(TypeName = "decimal(7,2)")]
+        public decimal Salario { get; set; }
 
         public ICollection<Factura> Facturas { get; set; }
+
+        public ICollection<Inventario> Inventarios { get; set; }
     }
 }

@@ -14,12 +14,14 @@ namespace BarberiaEntityFramework.Models
         public int ID { get; set; }
 
         [Required]
-        [MaxLength(10)]
+        [MaxLength(30)]
         public string Nombre { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(6,2)")]
         public decimal Precio { get; set; }
+
+        public ICollection<FacturaDetail> FacturaDetails { get; set; }
 
     }
 }

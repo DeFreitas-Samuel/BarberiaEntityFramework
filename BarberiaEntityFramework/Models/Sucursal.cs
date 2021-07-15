@@ -18,11 +18,11 @@ namespace BarberiaEntityFramework.Models
 
         [Required]
         [MaxLength(30)]
-        public int Nombre { get; set; }
+        public string Nombre { get; set; }
 
         [Required]
         [MaxLength(100)]
-        public int Calle { get; set; }
+        public string Calle { get; set; }
 
         public ICollection<Factura> Facturas { get; set; }
 

@@ -14,6 +14,7 @@ namespace BarberiaEntityFramework.Data
         {
         }
 
+
         public DbSet<BarberiaEntityFramework.Models.Cliente> Cliente { get; set; }
 
         public DbSet<BarberiaEntityFramework.Models.Ciudad> Ciudad { get; set; }
@@ -27,5 +28,11 @@ namespace BarberiaEntityFramework.Data
         public DbSet<BarberiaEntityFramework.Models.TipoPago> TipoPago { get; set; }
 
         public DbSet<BarberiaEntityFramework.Models.Empleado> Empleado { get; set; }
+
+        public DbSet<BarberiaEntityFramework.Models.Sucursal> Sucursal { get; set; }
+
+        public DbSet<BarberiaEntityFramework.Models.Factura> Factura { get; set; }
+
+        public DbSet<BarberiaEntityFramework.Models.FacturaDetail> FacturaDetail { get; set; }
     }
 }

@@ -20,5 +20,7 @@ namespace BarberiaEntityFramework.Models
         [Required]
         public int Cantidad { get; set; }
 
+        [Required]
+        public Empleado empleado { get; set; }
     }
 }

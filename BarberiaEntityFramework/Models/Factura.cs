@@ -17,6 +17,8 @@ namespace BarberiaEntityFramework.Models
         [Column(TypeName = "datetime")]
         public DateTime Fecha { get; set; }
 
+
+
         [Required]
         public Empleado empleado { get; set; }
         
@@ -28,5 +30,7 @@ namespace BarberiaEntityFramework.Models
 
         [Required]
         public Sucursal sucursal { get; set; }
+
+        public ICollection<FacturaDetail> FacturaDetails { get; set; }
     }
 }
